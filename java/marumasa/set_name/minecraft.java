@@ -39,7 +39,7 @@ public final class minecraft extends JavaPlugin {
             if (args.length == 0) {
                 name = "";
             } else {
-                name = args[0].replace("&", "§");
+                name = args[0].replace(config.colorcode, "§");
             }
             meta.setDisplayName(name);
             item.setItemMeta(meta);
@@ -56,7 +56,7 @@ public final class minecraft extends JavaPlugin {
             }
             List<String> lore = new ArrayList<String>();
             for (String text : args) {
-                lore.add(text.replace("&", "§"));
+                lore.add(text.replace(config.colorcode, "§"));
             }
             meta.setLore(lore);
             item.setItemMeta(meta);
