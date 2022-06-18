@@ -1,0 +1,11 @@
+setname:
+  NoItemText: |-
+    "名前を変更したいアイテムを持ってください
+    /setname [変更する名前]"
+  ResultText: "名前を変更しました"
+
+setlore:
+  NoItemText: |-
+    "説明を変更したいアイテムを持ってください
+    /setlore [変更する説明 1行目] [変更する説明 2行目]"
+  ResultText: "説明を変更しました"
