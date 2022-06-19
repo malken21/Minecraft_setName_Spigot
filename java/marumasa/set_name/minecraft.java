@@ -32,7 +32,7 @@ public final class minecraft extends JavaPlugin {
             ItemStack item = player.getInventory().getItemInMainHand();
             ItemMeta meta = item.getItemMeta();
             if (meta == null) {
-                sender.sendMessage(config.lore_NoItemText);
+                sender.sendMessage(config.name_NoItemText);
                 return false;
             }
             String name;
@@ -43,7 +43,7 @@ public final class minecraft extends JavaPlugin {
             }
             meta.setDisplayName(name);
             item.setItemMeta(meta);
-            sender.sendMessage(config.lore_ResultText);
+            sender.sendMessage(config.name_ResultText);
             return true;
         }
         if (cmd.getName().equals("setlore")) {
