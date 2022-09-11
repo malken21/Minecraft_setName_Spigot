@@ -1,0 +1,10 @@
+name: Set_name
+version: '${version}'
+main: marumasa.set_name.minecraft
+api-version: 1.16
+authors: [ marumasa ]
+commands:
+  setname:
+    description: "メインハンドに持っているアイテムの名前を変更"
+  setlore:
+    description: "メインハンドに持っているアイテムの説明を変更"
